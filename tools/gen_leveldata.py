@@ -13,12 +13,21 @@ surface line; consecutive ramp/platform surface points share vertices so the
 CompositeCollider2D outline is continuous (no bumps).
 
 Ball-chute numbers (simulated against PlayerController physics — gravity
-scale 2, linearDamping 0.35, drive force 30 below 8 u/s, 24 cap):
-the eased 36-degree chute + 20-degree kicker launches the ball at 18.2 u/s;
-flight over the 15-wide pit to a landing 6.9 below the lip clears by +2.2
-(a no-drive coast-in still clears by +1.8). Paper tops out at 14 even with
-a perfect coyote jump — and the 1.25 chute mouth means paper never reaches
-the lip in the first place.
+scale 2, linearDamping 0.35, drive force 30 below 8 u/s, 24 cap, contact
+friction 0.02 from the level physics material; validated in-engine by the
+SmokeTests): the eased 36-degree chute + 20-degree kicker launches the ball
+at 14.3 u/s measured in-engine (the sim overestimates roll speed; trust
+the SmokeTests numbers); flight over the 12.5-wide pit to a landing 8.9
+below the lip clears by ~1.4 with zero input and more when driven. Paper
+tops out at ~14.4 ONLY with a deliberate mid-chute unfold plus a perfect
+coyote lip jump — kept as a risky expert shortcut; the 1.25 chute mouth
+means paper never reaches the lip by simply walking in.
+
+Consecutive ramp boxes are emitted 0.3 LONGER at each shared vertex so the
+boxes genuinely overlap: corner-point contact does not merge in the
+CompositeCollider2D and leaves pinch seams that kick the ball and eat its
+speed (measured in-engine: lip speed 10.4 instead of 17.6). The lip end of
+a chain is never extended (it would move the launch point).
 """
 import math
 import os
@@ -26,9 +35,9 @@ import os
 # ---------------------------------------------------------------- geometry
 # Ability budget: required single-jump rises <= 4 (true max ~4.9), the
 # double-jump routes use 4.5-5.5 rises (max ~9.3), required flat gaps <= 6
-# (range ~10), ball squeeze slots 1.25, ball-only pit gap 15 (see docstring),
+# (range ~10), ball squeeze slots 1.25, ball-only pit gap 12.5 (see docstring),
 # plane glide ratio ~4.6 at boost speed -> the 110-wide / 28-deep glide is
-# comfortable.  Anti-skip: ball launch 18.2 < 24 cap, a 3-tall wall stops the
+# comfortable.  Anti-skip: ball launch ~14.3 < 24 cap, a 3.5-tall wall stops the
 # ball after the pit, every flight path is capped by terrain or kill zones.
 FLATS = [
     # --- 1: the perch + intro slide (the sheet tumbles down into the world) --
@@ -47,10 +56,11 @@ FLATS = [
     # --- 3: the ball chute (RAMPS) — mouth is a 1.25 slot, ball only ---
     (86.0, 14.0, 4.0, 7.75),      # chute mouth block: slot 1.25 over the ledge,
                                   #   top 14 is beyond any paper jump
-    (156.5, -27.5, 39.5, 6.0),    # pit landing platform, x[156.5..196]
+    (154.0, -29.5, 42.0, 6.0),    # pit landing platform, x[154..196]
     # --- 4: forced unfold, double-jump checkpoint ---
-    (174.0, -24.5, 22.0, 3.0),    # stop wall + checkpoint-3 block (3-tall:
-                                  #   paper hops it, the ball never can)
+    (174.0, -26.0, 22.5, 3.5),    # stop wall + checkpoint-3 block (3.5-tall:
+                                  #   paper hops it, the ball never can; flush
+                                  #   with the climb base floor, overlaps it)
     # --- 5: chimney crossroads — two routes up, floor catches every fall ---
     (196.0, -26.0, 40.0, 5.0),    # climb base floor, x[196..236]
     (204.0, -8.0, 4.0, 18.0),     # left tower, x[204..208]
@@ -96,21 +106,21 @@ RAMPS = [
     (132.0, -21.126, 135.0, -22.101, 3.0),
     (135.0, -22.101, 136.5, -22.101, 3.0),
     (136.5, -22.101, 138.5, -21.712, 3.0),
-    (138.5, -21.712, 141.5, -20.620, 3.0),  # lip — gap of 15 to the landing
+    (138.5, -21.712, 141.5, -20.620, 3.0),  # lip — gap of 12.5 to the landing
 ]
 
 # (pole_x, base_y, unlocksDoubleJump, isGoal)
 CHECKPOINTS = [
     (32.0, 0.0, False, False),      # meadow
     (75.0, 5.0, False, False),      # before the chute
-    (182.0, -24.5, True, False),    # after the pit — unlocks double jump
+    (182.0, -26.0, True, False),    # after the pit — unlocks double jump
     (256.0, -2.0, False, False),    # after the squeeze, before the glide
     (452.0, -38.0, False, True),    # home
 ]
 
 # (left, top, w, h, message)
 KILLZONES = [
-    (143.0, -28.0, 13.0, 18.0, "SNIP! Mind the shredder pit..."),
+    (143.0, -30.0, 10.5, 18.0, "SNIP! Mind the shredder pit..."),
     (318.0, 4.0, 110.0, 3.0, "Too high! The shredder sky hums above..."),
     (472.0, -6.0, 6.0, 40.0, "The world ends here...\nand I hope you're not trying to run away"),
 ]
@@ -123,8 +133,8 @@ SIGNS = [
     (70.5, -2.0, "Stuck?\nPress R to return\nto your checkpoint"),
     (80.0, 5.0, "Only a BALL fits down the chute.\nPress X to fold!"),
     (85.0, 5.0, "Roll with it — speed is the\nonly way across the pit"),
-    (168.0, -27.5, "Balls can't jump...\nPress Z to unfold into PAPER"),
-    (188.0, -24.5, "Press SPACE in mid-air\nto DOUBLE JUMP!"),
+    (168.0, -29.5, "Balls can't jump...\nPress Z to unfold into PAPER"),
+    (188.0, -26.0, "Press SPACE in mid-air\nto DOUBLE JUMP!"),
     (211.0, -26.0, "Many ways up!\n(Press O to zoom out, I to zoom in)"),
     (228.0, -2.0, "Tight squeeze? Fold into a BALL (X)\n...or find a way OVER"),
     (302.0, -10.0, "Press C in MID-AIR\nto fold into a PLANE!"),
@@ -142,16 +152,41 @@ def flat_cs(left, top, w, h):
     return f"        new Plat({left + w / 2:.3f}f, {top - h / 2:.3f}f, {w:.3f}f, {h:.3f}f, 0f),"
 
 
-def ramp_cs(x1, y1, x2, y2, t):
+def ramp_cs(x1, y1, x2, y2, t, ext1=0.0, ext2=0.0):
     dx, dy = x2 - x1, y2 - y1
     length = math.hypot(dx, dy)
     ux, uy = dx / length, dy / length
+    # extend past shared vertices so neighbouring boxes truly overlap
+    x1 -= ux * ext1; y1 -= uy * ext1
+    x2 += ux * ext2; y2 += uy * ext2
+    length += ext1 + ext2
     # surface midpoint, pushed half a thickness along the downward normal
     nx, ny = uy, -ux
     cx = (x1 + x2) / 2 + nx * t / 2
     cy = (y1 + y2) / 2 + ny * t / 2
     rot = math.degrees(math.atan2(dy, dx))
     return f"        new Plat({cx:.3f}f, {cy:.3f}f, {length:.3f}f, {t:.3f}f, {rot:.2f}f),"
+
+
+def ramp_extensions():
+    """0.3 overlap at every ramp end that another surface continues from;
+    free ends (the chute lip) are left exact so the launch point stays put."""
+    ends = [(r[0], r[1]) for r in RAMPS] + [(r[2], r[3]) for r in RAMPS]
+
+    def continues(px, py, occurrences_needed):
+        shared = sum(1 for (ex, ey) in ends
+                     if abs(ex - px) < 1e-6 and abs(ey - py) < 1e-6)
+        if shared >= occurrences_needed:
+            return True
+        return any(l - 1e-6 <= px <= l + w + 1e-6 and abs(t - py) < 0.05
+                   for (l, t, w, h) in FLATS)
+
+    out = []
+    for (x1, y1, x2, y2, t) in RAMPS:
+        ext1 = 0.3 if continues(x1, y1, 2) else 0.0
+        ext2 = 0.3 if continues(x2, y2, 2) else 0.0
+        out.append((x1, y1, x2, y2, t, ext1, ext2))
+    return out
 
 
 def esc(s):
@@ -178,7 +213,7 @@ def main():
     lines.append("    {")
     for f in FLATS:
         lines.append(flat_cs(*f))
-    for r in RAMPS:
+    for r in ramp_extensions():
         lines.append(ramp_cs(*r))
     lines.append("    };")
     lines.append("")

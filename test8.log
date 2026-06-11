@@ -1,0 +1,524 @@
+Unity Editor version:    6000.4.10f1 (feeafc12a938)
+Branch:                  6000.4/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 27.0 (Build 26A5353q)
+Darwin version:          27.0.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        24576 MB
+Date:                    2026-06-11T02:29:43Z
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Channel LicenseClient-limboenedmund doesn't exist
+Launching external process: /Applications/Unity/Hub/Editor/6000.4.10f1/Unity.app/Contents/Helpers/UnityLicensingClient.app/Contents/MacOS/Unity.Licensing.Client
+[Licensing::Module] Successfully launched the LicensingClient (PId: 26785)
+Launching external process: /Applications/Unity/Hub/Editor/6000.4.10f1/Unity.app/Contents/Helpers/PackageManager/Server/UnityPackageManager
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/6000.4.10f1/Unity.app/Contents/MacOS/Unity
+-batchmode
+-projectPath
+/Users/limboenedmund/Documents/apps/unity/JJ26/PaperFold
+-runTests
+-testPlatform
+PlayMode
+-testResults
+/Users/limboenedmund/Documents/apps/unity/JJ26/test-results8.xml
+-logFile
+/Users/limboenedmund/Documents/apps/unity/JJ26/test8.log
+Successfully changed project path to: /Users/limboenedmund/Documents/apps/unity/JJ26/PaperFold
+/Users/limboenedmund/Documents/apps/unity/JJ26/PaperFold
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Player connection [8225845440]  Target information:
+
+Player connection [8225845440]  * "[IP] 10.103.150.223 [Port] 55504 [Flags] 2 [Guid] 2095511204 [EditorId] 2095511204 [Version] 1048832 [Id] OSXEditor(0,Edmunds-Samsung-Smart-Fridge.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+
+Player connection [8225845440]  * "[IP] 100.108.66.22 [Port] 55504 [Flags] 2 [Guid] 2095511204 [EditorId] 2095511204 [Version] 1048832 [Id] OSXEditor(0,Edmunds-Samsung-Smart-Fridge.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+
+Player connection [8225845440]  * "[IP] 169.254.231.195 [Port] 55504 [Flags] 2 [Guid] 2095511204 [EditorId] 2095511204 [Version] 1048832 [Id] OSXEditor(0,Edmunds-Samsung-Smart-Fridge.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+
+Player connection [8225845440] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8225845440] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-limboenedmund" at "2026-06-11T02:29:43.854101Z"
+[Package Manager] Connected to IPC stream "Upm-26783" after 0.1 seconds.
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              2b37f9220f7243f986a36aab1590868d
+  Correlation Id:          746bb3e0b80ed509116863e48a18691d
+  External correlation Id: 2042609301803929839
+  Machine Id:              lFs4JM7zPnOpKAxDcVQic6+/GA4=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-limboenedmund" (connect: 0.11s, validation: 0.02s, handshake: 0.23s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-limboenedmund-notifications" at "2026-06-11T02:29:44.10374Z"
+[Licensing::Module] Connected to LicensingClient (PId: 26785, launch time: 0.00, total connection time: 0.36s)
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 18967494956897-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Module] Licensing Background thread has ended after 0.37s
+[Licensing::Module] Licensing is initialized (took 0.14s).
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.4.10f1 (feeafc12a938)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.4.10f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/limboenedmund/Documents/apps/unity/JJ26/PaperFold/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+ preferred device: Apple M4 Pro (high power)
+Metal devices available: 1
+0: Apple M4 Pro (high power)
+Using device Apple M4 Pro (high power)
+Initializing Metal device caps: Apple M4 Pro
+Mac GPU Family: 2
+Apple GPU Family: 9
+MSL Version: 3.0
+Has Float MSAA: 1
+Has Float Filtering: 1
+ReadWrite Texture Tier: 2
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/6000.4.10f1/Unity.app/Contents/Resources/Scripting/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/6000.4.10f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/6000.4.10f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56783
+CodeReloadManager initialized
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/6000.4.10f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/6000.4.10f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.000359 seconds.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.171 seconds
+Domain Reload Profiling: 378ms
+	BeginReloadAssembly (66ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (17ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (23ms)
+	LoadAllAssembliesAndSetupDomain (94ms)
+		LoadAssemblies (45ms)
+		AnalyzeDomain (90ms)
+			TypeCache.Refresh (89ms)
+				TypeCache.ScanAssembly (82ms)
+	FinalizeReload (172ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			BeforeProcessingInitializeOnLoad (37ms)
+			ProcessInitializeOnLoadAttributes (46ms)
+			ProcessInitializeOnLoadMethodAttributes (37ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 13 packages:
+  Built-in packages:
+    com.unity.2d.sprite@1.0.0 (location: /Users/limboenedmund/Documents/apps/unity/JJ26/PaperFold/Library/PackageCache/com.unity.2d.sprite@b95cc7beb645)
+    com.unity.test-framework@1.6.0 (location: /Users/limboenedmund/Documents/apps/unity/JJ26/PaperFold/Library/PackageCache/com.unity.test-framework@996f223345ba)
+    com.unity.modules.animation@1.0.0 (location: /Users/limboenedmund/Documents/apps/unity/JJ26/PaperFold/Library/PackageCache/com.unity.modules.animation)
+    com.unity.modules.audio@1.0.0 (location: /Users/limboenedmund/Documents/apps/unity/JJ26/PaperFold/Library/PackageCache/com.unity.modules.audio)
+    com.unity.modules.imgui@1.0.0 (location: /Users/limboenedmund/Documents/apps/unity/JJ26/PaperFold/Library/PackageCache/com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: /Users/limboenedmund/Documents/apps/unity/JJ26/PaperFold/Library/PackageCache/com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: /Users/limboenedmund/Documents/apps/unity/JJ26/PaperFold/Library/PackageCache/com.unity.modules.particlesystem)
+    com.unity.modules.physics2d@1.0.0 (location: /Users/limboenedmund/Documents/apps/unity/JJ26/PaperFold/Library/PackageCache/com.unity.modules.physics2d)
+    com.unity.modules.ui@1.0.0 (location: /Users/limboenedmund/Documents/apps/unity/JJ26/PaperFold/Library/PackageCache/com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: /Users/limboenedmund/Documents/apps/unity/JJ26/PaperFold/Library/PackageCache/com.unity.modules.uielements)
+    com.unity.modules.hierarchycore@1.0.0 (location: /Users/limboenedmund/Documents/apps/unity/JJ26/PaperFold/Library/PackageCache/com.unity.modules.hierarchycore)
+    com.unity.modules.physics@1.0.0 (location: /Users/limboenedmund/Documents/apps/unity/JJ26/PaperFold/Library/PackageCache/com.unity.modules.physics)
+    com.unity.ext.nunit@2.0.5 (location: /Users/limboenedmund/Documents/apps/unity/JJ26/PaperFold/Library/PackageCache/com.unity.ext.nunit@d8c07649098d)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.01 seconds
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://unix:/tmp/ilpp.sock-069225cc2878930ce15f9a6cc0eae1f4
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/limboenedmund/Documents/apps/unity/JJ26/PaperFold
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping - application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping - 200 - application/grpc 14.3495ms
+Starting: /Applications/Unity/Hub/Editor/6000.4.10f1/Unity.app/Contents/Resources/BuildPipeline/bee_backend --ipc --defer-dag-verification --dagfile="Library/Bee/200b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: /Users/limboenedmund/Documents/apps/unity/JJ26/PaperFold
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 0s38ms
+*** Tundra build success (0.02 seconds), 0 items updated, 194 evaluated
+AssetDatabase: script compilation time: 0.280616s
+Begin MonoManager ReloadAssembly
+Total cache size 146586500
+Total cache size after purge 146586500, took 00:00:00.0351203
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-Editor.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp.dll at Library/ScriptAssemblies/Assembly-CSharp.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Sprite.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Sprite.Package.EditorTests.dll not valid. Loading of assembly skipped.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.186 seconds
+Domain Reload Profiling: 362ms
+	BeginReloadAssembly (91ms)
+		DisableScriptedObjects (8ms)
+		CreateAndSetChildDomain (35ms)
+	RebuildCommonClasses (18ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (14ms)
+	LoadAllAssembliesAndSetupDomain (47ms)
+		LoadAssemblies (62ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (5ms)
+	FinalizeReload (186ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			BeforeProcessingInitializeOnLoad (50ms)
+			ProcessInitializeOnLoadAttributes (36ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+(Values over 0.050ms)
+Asset Pipeline Refresh (id=939485b36eefc4b77a31adb4ada58105): Total: 0.726 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=250 ms
+		Asset DB Callback time: managed=9 ms, native=6 ms
+		Scripting: domain reloads=1, domain reload time=176 ms, compile time=281 ms, other=2 ms
+		Project Asset Count: scripts=128, non-scripts=90
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 1
+	InvokePackagesCallback: 7.440ms
+	ApplyChangesToAssetFolders: 0.073ms
+	Scan: 34.350ms
+	CategorizeScriptCompilationAssets: 1.480ms
+	ProcessAssetsWithTransientArtifactChanges: 2.180ms
+	CategorizeAssets: 1.569ms
+	CompileScripts: 281.325ms
+	ImportOutOfDateAssets: 186.910ms (186.705ms without children)
+		UnloadImportedAssets: 0.096ms
+		OnDemandSchedulerStart: 0.082ms
+	PostProcessAllAssets: 9.271ms
+		MonoPostProcessAllAssets: 9.245ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 3.620ms
+			SyncVS.PostprocessSyncProject 1.110ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 0.348ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.166ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.108ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.075ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.051ms
+	UnloadStreamsBegin: 0.505ms
+	GenerateScriptTypeHashes: 0.538ms
+	GenerateScriptTypeSerializationHashes: 1.150ms
+	Untracked: 200.069ms
+
+Application.AssetDatabase Initial Refresh End
+Launching external process: /Applications/Unity/Hub/Editor/6000.4.10f1/Unity.app/Contents/Helpers/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.05 seconds
+Scanning for USB devices : 0.102ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-PaperFold
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 466 unused Assets / (0.6 MB). Loaded Objects now: 1105.
+Memory consumption went from 105.1 MB to 104.5 MB.
+Total: 3.079250 ms (FindLiveObjects: 0.040458 ms CreateObjectMapping: 0.010917 ms MarkObjects: 2.852916 ms  DeleteObjects: 0.174625 ms)
+
+[Project] Loading completed in 2.213 seconds
+	Project init time: 				2.093 seconds
+		Template init time: 		0.000 seconds
+		Package Manager init time: 		0.269 seconds
+		Asset Database init time: 		0.164 seconds
+		Global illumination init time: 	0.000 seconds
+		Assemblies load time: 			0.390 seconds
+		Unity extensions init time: 	0.001 seconds
+		Asset Database refresh time: 	0.727 seconds
+	Scene opening time: 			0.042 seconds
+##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1781144985954,"processId":26783,"projectLoad":2.212968125,"projectInit":2.093490125,"templateInit":0.0,"packageManagerInit":0.268531042,"assetDatabaseInit":0.16362375,"globalIlluminationInit":0.000421709,"assembliesLoad":0.389763416,"unityExtensionsInit":0.001085833,"assetDatabaseRefresh":0.726751708,"sceneOpening":0.042048958}
+##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1781144985954,"processId":26783,"editorVersion":"6000.4.10f1 (feeafc12a938)","branch":"6000.4/staging","buildType":"Release","platform":"OSX"}
+Subscribe to USB device events
+Scanning for USB devices : 0.542ms
+[Licensing::Client] Successfully resolved entitlement details
+Running tests for ExecutionSettings with details:
+targetPlatform = 
+playerHeartbeatTimeout = 600
+filters[0] = 
+   Filter with settings:
+   testMode = PlayMode
+   targetPlatform = 
+   testNames = null
+   groupNames = null
+   categoryNames = null
+   assemblyNames = null
+ignoreTests = {}
+featureFlags = null
+
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+UnityEditor.TestTools.TestRunner.CommandLineTest.Executer:InitializeAndExecuteRun (string[]) (at ./Library/PackageCache/com.unity.test-framework@996f223345ba/UnityEditor.TestRunner/CommandLineTest/Executer.cs:53)
+UnityEditor.TestTools.TestRunner.CommandLineTest.TestStarter:InitializeAndExecuteRun () (at ./Library/PackageCache/com.unity.test-framework@996f223345ba/UnityEditor.TestRunner/CommandLineTest/TestStarter.cs:64)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:401)
+
+(Filename: ./Library/PackageCache/com.unity.test-framework@996f223345ba/UnityEditor.TestRunner/CommandLineTest/Executer.cs Line: 53)
+
+Start Indexing on Editor startup
+[Indexing] Starting Initial Indexing for Assets
+[UnityConnectServicesConfig] config is NOT valid, switching to default
+Created GICache directory at /Users/limboenedmund/Library/Caches/com.unity3d.UnityEditor/GiCache. Took: 0.001s, timestamps: [2.215 - 2.217]
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (54.1 KB). Loaded Objects now: 1123.
+Memory consumption went from 93.0 MB to 93.0 MB.
+Total: 3.355250 ms (FindLiveObjects: 0.024709 ms CreateObjectMapping: 0.008250 ms MarkObjects: 3.319625 ms  DeleteObjects: 0.002208 ms)
+
+Start importing Assets/InitTestScene530e9dac-d340-4390-9934-cc6b09a6114f.unity using Guid(967d775cd6ed5406fb8eb2e38c325c28) (DefaultImporter) -> (Import Result ID: '4324c9b7a3d9fbf5c32c20dee4e3bd0a') in 0.001929292 seconds [static dependencies only]. Details - ImportResultOutputID=8bcb3e55e76bdbf2b179a4f3dffbde4e DependenciesID=ce2855c255ae2ddc7e78fe94dbbaee0b StaticDependenciesID=17875496d8ce64cce7d61319ecde4b8a 
+Asset Pipeline Refresh (id=470c4fe83b6a443b986615e345b263ef): Total: 0.020 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Thread 0x171b0f000 may have been prematurely finalized
+Reloading assemblies for play mode.
+Reloading assemblies after forced synchronous recompile.
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-Editor.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp.dll at Library/ScriptAssemblies/Assembly-CSharp.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Sprite.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Sprite.Package.EditorTests.dll not valid. Loading of assembly skipped.
+Begin MonoManager ReloadAssembly
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-Editor.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp.dll at Library/ScriptAssemblies/Assembly-CSharp.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Sprite.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Sprite.Package.EditorTests.dll not valid. Loading of assembly skipped.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.244 seconds
+Domain Reload Profiling: 363ms
+	BeginReloadAssembly (69ms)
+		DisableScriptedObjects (9ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (17ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (14ms)
+	LoadAllAssembliesAndSetupDomain (13ms)
+		LoadAssemblies (25ms)
+		AnalyzeDomain (7ms)
+			TypeCache.Refresh (2ms)
+			BuildScriptInfoCaches (5ms)
+	FinalizeReload (245ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			BeforeProcessingInitializeOnLoad (49ms)
+			ProcessInitializeOnLoadAttributes (36ms)
+			ProcessInitializeOnLoadMethodAttributes (48ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+(Values over 0.050ms)
+Asset Pipeline Refresh (id=966dc53334ca14ae9aaee0f774ab31e5): Total: 0.387 seconds - Initiated by StopAssetImportingV2(ForceSynchronousImport | ForceDomainReload)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=253 ms
+		Asset DB Callback time: managed=7 ms, native=0 ms
+		Scripting: domain reloads=1, domain reload time=125 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=128, non-scripts=91
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 0.567ms
+	ProcessAssetsWithTransientArtifactChanges: 0.121ms
+	CategorizeAssets: 1.109ms
+	CompileScripts: 0.424ms
+	ImportOutOfDateAssets: 245.051ms (244.942ms without children)
+		OnDemandSchedulerStart: 0.085ms
+	PostProcessAllAssets: 7.826ms
+		MonoPostProcessAllAssets: 7.825ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 4.647ms
+			AssetPostprocessor.OnPostprocessAllAssets 3.968ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 3.401ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 3.156ms
+			SyncVS.PostprocessSyncProject 0.619ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 0.537ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 0.331ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.265ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.252ms
+			SpriteEditorTexturePostprocessor.OnPostprocessAllAssets 0.201ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.123ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.122ms
+			AssetChangedListener.OnPostprocessAllAssets 0.122ms
+			AssetEvents.OnPostprocessAllAssets 0.104ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.082ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.072ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.062ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.057ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.057ms
+	GenerateScriptTypeHashes: 0.393ms
+	GenerateScriptTypeSerializationHashes: 0.871ms
+	Untracked: 131.147ms
+
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            0.425 ms
+	Integration:            7.852 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.006 ms
+	Total Operation Time:   8.283 ms
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[Licensing::Client] Successfully resolved entitlement details
+Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.086917 ms
+Loaded scene 'Assets/Scenes/Main.unity'
+	Deserialize:            7.094 ms
+	Integration:            72.529 ms
+	Integration of assets:  0.431 ms
+	Thread Wait Time:       0.001 ms
+	Total Operation Time:   80.055 ms
+Unloading 2 unused Assets / (1.3 KB). Loaded Objects now: 1782.
+Memory consumption went from 92.3 MB to 92.2 MB.
+Total: 3.352916 ms (FindLiveObjects: 0.036209 ms CreateObjectMapping: 0.007375 ms MarkObjects: 3.297083 ms  DeleteObjects: 0.011917 ms)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.525417 ms
+Loaded scene 'Assets/Scenes/Main.unity'
+	Deserialize:            3.708 ms
+	Integration:            3.761 ms
+	Integration of assets:  0.002 ms
+	Thread Wait Time:       0.009 ms
+	Total Operation Time:   7.480 ms
+Unloading 3 unused Assets / (0.8 KB). Loaded Objects now: 1782.
+Memory consumption went from 86.2 MB to 86.2 MB.
+Total: 3.923959 ms (FindLiveObjects: 0.065500 ms CreateObjectMapping: 0.008417 ms MarkObjects: 3.838458 ms  DeleteObjects: 0.011333 ms)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.386917 ms
+Loaded scene 'Assets/Scenes/Main.unity'
+	Deserialize:            4.111 ms
+	Integration:            3.540 ms
+	Integration of assets:  0.002 ms
+	Thread Wait Time:       0.006 ms
+	Total Operation Time:   7.659 ms
+Unloading 3 unused Assets / (0.5 KB). Loaded Objects now: 1782.
+Memory consumption went from 86.2 MB to 86.2 MB.
+Total: 3.711167 ms (FindLiveObjects: 0.040208 ms CreateObjectMapping: 0.008083 ms MarkObjects: 3.650875 ms  DeleteObjects: 0.011833 ms)
+
+Saving results to: /Users/limboenedmund/Documents/apps/unity/JJ26/test-results8.xml
+Thread 0x171c27000 may have been prematurely finalized
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            0.296 ms
+	Integration:            2.634 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.005 ms
+	Total Operation Time:   2.935 ms
+Unloading 15 unused Assets / (8.9 KB). Loaded Objects now: 1155.
+Memory consumption went from 85.5 MB to 85.5 MB.
+Total: 3.715042 ms (FindLiveObjects: 0.029125 ms CreateObjectMapping: 0.008125 ms MarkObjects: 3.625292 ms  DeleteObjects: 0.052250 ms)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (0 B). Loaded Objects now: 1160.
+Memory consumption went from 85.5 MB to 85.5 MB.
+Total: 3.428000 ms (FindLiveObjects: 0.021250 ms CreateObjectMapping: 0.007250 ms MarkObjects: 3.396209 ms  DeleteObjects: 0.002959 ms)
+
+Asset Pipeline Refresh (id=7a93ab06d098b47a6a718962864f7c9e): Total: 0.028 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+DisplayProgressbar: Undo
+Test run completed. Exiting with code 2 (Failed). One or more tests failed.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+UnityEditor.TestTools.TestRunner.CommandLineTest.Executer:ExitApplication (UnityEditor.TestTools.TestRunner.CommandLineTest.Executer/ReturnCodes,string) (at ./Library/PackageCache/com.unity.test-framework@996f223345ba/UnityEditor.TestRunner/CommandLineTest/Executer.cs:81)
+UnityEditor.TestTools.TestRunner.CommandLineTest.Executer:ExitIfRunIsCompleted () (at ./Library/PackageCache/com.unity.test-framework@996f223345ba/UnityEditor.TestRunner/CommandLineTest/Executer.cs:74)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:401)
+
+(Filename: ./Library/PackageCache/com.unity.test-framework@996f223345ba/UnityEditor.TestRunner/CommandLineTest/Executer.cs Line: 81)
+
+The command could not be loaded, possibly because:
+  * You intended to execute a .NET application:
+      The application 'build-server' does not exist.
+  * You intended to execute a .NET SDK command:
+      No .NET SDKs were found.
+
+Download a .NET SDK:
+https://aka.ms/dotnet/download
+
+Learn about SDK resolution:
+https://aka.ms/dotnet/sdk-not-found
+Start importing ProjectSettings/ProjectSettings.asset using Guid(00000000000000004000000000000000) (LibraryAssetImporter) -> (Import Result ID: '258c7d7881ac6db47964d6a8be24154d') in 0.002469542 seconds [static dependencies only]. Details - ImportResultOutputID=d3ca6db29495033f6ec6c171ea098da8 DependenciesID=43aa772eaeba267b0cf9e138d419135f StaticDependenciesID=84465525d6e587521064268c6352c742 
+Asset Pipeline Refresh (id=7976e6422fa4c469bae40caf8a44c5fd): Total: 0.006 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Thread 0x16deaf000 may have been prematurely finalized
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+[Licensing::IpcConnector] LicenseClient-limboenedmund-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-limboenedmund channel disconnected successfully.
+Thread 0x16dfc7000 may have been prematurely finalized
+Thread 0x16e053000 may have been prematurely finalized
+AcceleratorClientConnectionCallback - disconnected - :0
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+Cleanup mono
+CodeReloadManager destroyed
+debugger-agent: Unable to listen on 43

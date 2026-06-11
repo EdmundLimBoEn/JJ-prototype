@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="3" result="Failed(Child)" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-06-11 02:29:46Z" end-time="2026-06-11 02:30:10Z" duration="23.706529">
+  <test-suite type="TestSuite" id="1007" name="PaperFold" fullname="PaperFold" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2026-06-11 02:29:46Z" end-time="2026-06-11 02:30:10Z" duration="23.706529" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1005" name="PaperFold.Tests.dll" fullname="/Users/limboenedmund/Documents/apps/unity/JJ26/PaperFold/Library/ScriptAssemblies/PaperFold.Tests.dll" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2026-06-11 02:29:46Z" end-time="2026-06-11 02:30:10Z" duration="23.702847" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="26783" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="1001" name="SmokeTests" fullname="SmokeTests" classname="SmokeTests" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2026-06-11 02:29:46Z" end-time="2026-06-11 02:30:10Z" duration="23.702175" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="1003" name="BallChute_NoInputLaunchClearsThePit" fullname="SmokeTests.BallChute_NoInputLaunchClearsThePit" methodname="BallChute_NoInputLaunchClearsThePit" classname="SmokeTests" runstate="Runnable" seed="78166422" result="Failed" start-time="2026-06-11 02:29:46Z" end-time="2026-06-11 02:29:54Z" duration="7.513113" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <failure>
+            <message><![CDATA[  Ball did not clear the pit (max x 155.78, lip velocity (13.46, 4.90))
+  Expected: greater than 156.5f
+  But was:  -12.0f
+]]></message>
+            <stack-trace><![CDATA[at SmokeTests+<BallChute_NoInputLaunchClearsThePit>d__1.MoveNext () [0x001b4] in /Users/limboenedmund/Documents/apps/unity/JJ26/PaperFold/Assets/Tests/SmokeTests.cs:78
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in ./Library/PackageCache/com.unity.test-framework@996f223345ba/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:44
+]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="1002" name="LevelLoads_PlayerSimulates_AndKillRespawnWorks" fullname="SmokeTests.LevelLoads_PlayerSimulates_AndKillRespawnWorks" methodname="LevelLoads_PlayerSimulates_AndKillRespawnWorks" classname="SmokeTests" runstate="Runnable" seed="1259655501" result="Passed" start-time="2026-06-11 02:29:54Z" end-time="2026-06-11 02:29:57Z" duration="3.533361" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1004" name="PlaneGlide_NoInputReachesTheFinalPlatform" fullname="SmokeTests.PlaneGlide_NoInputReachesTheFinalPlatform" methodname="PlaneGlide_NoInputReachesTheFinalPlatform" classname="SmokeTests" runstate="Runnable" seed="966507619" result="Passed" start-time="2026-06-11 02:29:57Z" end-time="2026-06-11 02:30:10Z" duration="12.651650" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[Saving results to: /Users/limboenedmund/Documents/apps/unity/JJ26/test-results8.xml
+]]></output>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -47,7 +47,7 @@ public class SmokeTests
 
     // The chute is the one mandatory ball move: even with NO input, a ball
     // dropped into the chute mouth must launch off the kicker and clear the
-    // 15-wide shredder pit (landing platform starts at x=156.5, top -27.5).
+    // 12.5-wide shredder pit (landing platform starts at x=154, top -29.5).
     [UnityTest]
     public IEnumerator BallChute_NoInputLaunchClearsThePit()
     {
@@ -63,7 +63,7 @@ public class SmokeTests
         float deadline = Time.time + 12f;
         float maxX = -99f;
         Vector2 lipVelocity = Vector2.zero;
-        while (Time.time < deadline && player.transform.position.x < 157f &&
+        while (Time.time < deadline && player.transform.position.x < 155.5f &&
                player.transform.position.x > 0f) // death respawns near x=-12
         {
             if (player.transform.position.x > maxX)
@@ -75,9 +75,9 @@ public class SmokeTests
             yield return null;
         }
 
-        Assert.Greater(player.transform.position.x, 156.5f,
+        Assert.Greater(player.transform.position.x, 155f,
             $"Ball did not clear the pit (max x {maxX:F2}, lip velocity {lipVelocity})");
-        Assert.Greater(player.transform.position.y, -29f, "Ball ended up inside the pit");
+        Assert.Greater(player.transform.position.y, -31f, "Ball ended up inside the pit");
     }
 
     // The glide home must be makeable at minimum airspeed: fold into a plane

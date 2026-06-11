@@ -56,6 +56,22 @@ public static class LevelBuilder
         composite.geometryType = CompositeCollider2D.GeometryType.Outlines;
         level.gameObject.layer = LayerWorld;
 
+        // The ball is meant to be a near-frictionless slider (see
+        // PlayerController): Unity's default 0.4 surface friction mixes in as
+        // sqrt(0.4 * 0.02) ~ 0.09 and bleeds ~20% of the chute launch speed,
+        // so the world itself is slick too. Paper and plane already carry
+        // zero-friction materials, so this only affects the ball.
+        const string matPath = "Assets/LevelPhysics.physicsMaterial2D";
+        var levelMat = AssetDatabase.LoadAssetAtPath<PhysicsMaterial2D>(matPath);
+        if (levelMat == null)
+        {
+            levelMat = new PhysicsMaterial2D("level");
+            AssetDatabase.CreateAsset(levelMat, matPath);
+        }
+        levelMat.friction = 0.02f;
+        levelMat.bounciness = 0f;
+        composite.sharedMaterial = levelMat;
+
         Sprite groundTop = S("ground_top"), ground = S("ground");
         foreach (var p in LevelData.Platforms)
         {
