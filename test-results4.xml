@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-06-10 09:04:46Z" end-time="2026-06-10 09:04:50Z" duration="3.6021676">
+  <test-suite type="TestSuite" id="1005" name="PaperFold" fullname="PaperFold" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-06-10 09:04:46Z" end-time="2026-06-10 09:04:50Z" duration="3.602168" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1003" name="PaperFold.Tests.dll" fullname="/Users/limboenedmund/Documents/apps/unity/JJ26/PaperFold/Library/ScriptAssemblies/PaperFold.Tests.dll" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-06-10 09:04:46Z" end-time="2026-06-10 09:04:50Z" duration="3.599218" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="61924" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestFixture" id="1001" name="SmokeTests" fullname="SmokeTests" classname="SmokeTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-06-10 09:04:46Z" end-time="2026-06-10 09:04:50Z" duration="3.598664" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1002" name="LevelLoads_PlayerSimulates_AndKillRespawnWorks" fullname="SmokeTests.LevelLoads_PlayerSimulates_AndKillRespawnWorks" methodname="LevelLoads_PlayerSimulates_AndKillRespawnWorks" classname="SmokeTests" runstate="Runnable" seed="1716763243" result="Passed" start-time="2026-06-10 09:04:46Z" end-time="2026-06-10 09:04:50Z" duration="3.594499" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[Saving results to: /Users/limboenedmund/Documents/apps/unity/JJ26/test-results4.xml
+]]></output>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
